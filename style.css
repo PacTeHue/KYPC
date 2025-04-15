@@ -6,9 +6,11 @@
 body {
     font-family: Arial, sans-serif;
 }
-/* первый экран */
+
+
+/* Первый экран */
 .hero-section {
-    background: url('img/once_human_screenshot_7.jpg') no-repeat center center;
+    background: url('img/once_human_screenshot_7.jpg') no-repeat center;
     background-size: cover;
     height: 105vh;
     display: flex;
@@ -22,6 +24,10 @@ body {
 .hero-content h1 {
     font-size: 3rem;
     font-weight: bold;
+}
+
+.hero-content span {
+    color: #24c2c5;
 }
 
 .hero-content p {
@@ -49,6 +55,14 @@ body {
 
     .hero-content p {
         font-size: 1rem;
+    }
+
+    .btn-custom {
+        padding-left: 20px;
+        padding-right: 20px;
+        max-width: calc(100% - 40px);
+        width: auto;
+        box-sizing: border-box;
     }
 }
 
@@ -121,5 +135,65 @@ body {
 
     .reviews-title {
         font-size: 28px;
+    }
+}
+
+/* Подвал */
+.footer {
+    background-color: #222;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.footer-section {
+    flex: 1;
+    padding: 10px;
+}
+
+.footer-section h2 {
+    margin-bottom: 10px;
+}
+
+.footer-section p, .footer-section ul {
+    margin: 0;
+}
+
+.footer-section ul {
+    list-style-type: none;
+}
+
+.footer-section ul li {
+    margin: 5px 0;
+}
+
+.footer-section a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.footer-section a:hover {
+    text-decoration: underline;
+}
+
+.footer-bottom {
+    background-color: #111;
+    padding: 10px 0;
+}
+@media (max-width: 768px) {
+    .footer-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-section {
+        width: 100%;
+        text-align: center;
     }
 }

@@ -10,7 +10,7 @@
 <body>
 
     <!-- Навигация -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-light bg-dark fixed-top">
         <a href="#hero"><img src="img/f8e5c311c5145d64a5fa7895caae64b7.png" class="display-4" width="100px" height="50px"></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav">
             <span class="navbar-toggler-icon"></span>
@@ -18,16 +18,16 @@
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item">
-                    <a class="nav-link" href="#about">О игре</a>
+                    <a class="nav-link text-danger" href="#about">О игре</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#features">Особенности</a>
+                    <a class="nav-link text-danger" href="#features">Особенности</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#reviews">Отзывы</a>
+                    <a class="nav-link text-danger" href="#reviews">Отзывы</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#contact">Контакты</a>
+                    <a class="nav-link text-danger" href="#contact">Контакты</a>
                 </li>
             </ul>
         </div>
@@ -36,7 +36,7 @@
     <!-- Первый экран -->
     <section class="hero-section" id="hero">
         <div class="hero-content">
-            <h1>Добро пожаловать в Once Human</h1>
+            <h1>Добро пожаловать в <span>Once Human</span></h1>
             <p>Погрузитесь в постапокалиптический мир, где каждое ваше решение имеет значение. Присоединяйтесь к борьбе за выживание!</p>
             <a href="#" class="btn btn-custom">Начать игру</a>
         </div>
@@ -102,15 +102,36 @@
                     <label for="message">Сообщение</label>
                     <textarea class="form-control" id="message" rows="3" placeholder="Ваше сообщение"></textarea>
                 </div>
-                <button type="submit" class="btn btn-primary">Отправить</button>
+                <button type="submit" class="btn btn-primary m-3">Отправить</button>
             </form>
         </div>
     </section>
 
     <!-- Подвал -->
-    <footer class="text-center py-4">
-
-        <p>2025 Once Human. Все права защищены.</p>
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section about">
+                <h2>О Once Human</h2>
+                <p>Once Human — это захватывающая игра, которая переносит игроков в постапокалиптический мир, где они должны выживать, исследовать и сражаться с различными врагами.</p>
+            </div>
+            <div class="footer-section links">
+                <h2>Ссылки</h2>
+                <ul>
+                    <li><a href="#about">О нас</a></li>
+                    <li><a href="#features">Особенности</a></li>
+                    <li><a href="#news">Новости</a></li>
+                    <li><a href="#contact">Контакты</a></li>
+                </ul>
+            </div>
+            <div class="footer-section contact">
+                <h2>Контакты</h2>
+                <p>Email: info@oncehuman.com</p>
+                <p>Телефон: +1 (234) 567-8901</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2023 Once Human. Все права защищены.</p>
+        </div>
     </footer>
 
 
