@@ -4,10 +4,20 @@
 }
 
 body {
-    font-family: Arial, sans-serif;
+    color: rgb(213, 208, 208);
+}
+.rubik-marker-hatch-regular{
+    font-family: "Rubik Marker Hatch", system-ui;
+    font-weight: 400;
+    font-style: normal;
 }
 
+  .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(220, 53, 69)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;
+  }
 
+
+  
 /* Первый экран */
 .hero-section {
     background: url('img/5188628365869968308.jpg') no-repeat center;
@@ -16,14 +26,13 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    color: white;
+
     text-align: center;
     padding: 0 20px;
 }
 
 .hero-content h1 {
-    font-size: 3rem;
-    font-weight: bold;
+    font-size: 4rem;
 }
 
 .hero-content span {
